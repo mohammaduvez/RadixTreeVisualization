@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* // Copyright 2011 David Galles, University of San Francisco. All rights reserved.
+//
+// Redistribution and use in source and binary forms, with or without modification, are
+// permitted provided that the following conditions are met:
+//
+// 1. Redistributions of source code must retain the above copyright notice, this list of
+// conditions and the following disclaimer.
+//
+// 2. Redistributions in binary form must reproduce the above copyright notice, this list
+// of conditions and the following disclaimer in the documentation and/or other materials
+// provided with the distribution.
+//
+// THIS SOFTWARE IS PROVIDED BY David Galles ``AS IS'' AND ANY EXPRESS OR IMPLIED
+// WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+// FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL  OR
+// CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+// CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+// SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+// ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+// NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+// ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+//
+// The views and conclusions contained in the software and documentation are those of the
+// authors and should not be interpreted as representing official policies, either expressed
+// or implied, of the University of San Francisco */
+
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	/*background: #666666; */
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+
+
+
+
+.VisualizationMainPage #mainContent {
+	/*padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+	background: #FFFFFF;
+}
+
+
+
+.VisualizationMainPage #container {
+
+
+	background: #FFFFFF;
+	/*margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}
+
+
+.VisualizationMainPage #algoControlSection
+{
+	background: #DDEEDD; 
+	color:#000000; 
+
+}
+
+
+.VisualizationMainPage #generalAnimationControlSection
+{
+	background: #DDEEDD; 
+	color:#006600; 
+
+}
+
+.VisualizationMainPage  #header { 
+	background: #006633; 
+	color:#ffCC33;
+	padding: 0 10px 0 20px; 
+  
+} 
+ 
+.VisualizationMainPage #header  A:visited 
+	  { text-decoration:none;
+        color:#ffCC33; 
+	   }
+	   
+	   
+.VisualizationMainPage #header h1 {
+	margin: 0; 
+	padding: 10px 0; 
+	}
+	   
+.VisualizationMainPage #header A:link {
+    text-decoration:none;
+    color:#ffCC33;
+	}
+	
+	
+.VisualizationMainPage #container {
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}	
+	
+	
+.VisualizationMainPage #footer  A:visited { text-decoration:none;
+        color:ffcc33; 
+}
+
+.VisualizationMainPage #footer A:link {
+    text-decoration:none;
+	color:#ffCC33;
+}
+
+
+	
+
+.VisualizationMainPage #mainContent h1{
+	padding: 0 20px; 
+	background: #FFFFFF;
+	color:#006633
+}
+
+.VisualizationMainPage #mainContent h2{
+	padding: 0 20px; 
+	background: #FFFFFF;
+	color:#006633
+}
+
+.VisualizationMainPage #mainContent h3{
+	padding: 0 20px; 
+	background: #FFFFFF;
+	color:#006633
+}
+
+
+
+.VisualizationMainPage #footer { 
+	padding: 0 10px;
+    background: #006633; 
+	color:#ffcc33;
+} 
+.VisualizationMainPage #footer p {
+	margin: 0; 	padding: 10px 0; 
+}
+
+EM {text-decoration: bold;}
+
+	

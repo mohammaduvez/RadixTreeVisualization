@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- // Copyright 2011 David Galles, University of San Francisco. All rights reserved.
+//
+// Redistribution and use in source and binary forms, with or without modification, are
+// permitted provided that the following conditions are met:
+//
+// 1. Redistributions of source code must retain the above copyright notice, this list of
+// conditions and the following disclaimer.
+//
+// 2. Redistributions in binary form must reproduce the above copyright notice, this list
+// of conditions and the following disclaimer in the documentation and/or other materials
+// provided with the distribution.
+//
+// THIS SOFTWARE IS PROVIDED BY David Galles ``AS IS'' AND ANY EXPRESS OR IMPLIED
+// WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+// FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL  OR
+// CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+// CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+// SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+// ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+// NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+// ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+//
+// The views and conclusions contained in the software and documentation are those of the
+// authors and should not be interpreted as representing official policies, either expressed
+// or implied, of the University of San Francisco -->
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+	<title>
+		Radix Tree Visualization
+	</title>
+
+	<!-- css sheet for how the page is laid out -->
+
+	<link rel="stylesheet" href="css/visualizationPageStyle.css">
+
+
+	<!-- jqueury stuff.  Only used for the animation speed slider. -->
+	<link rel="stylesheet" href="css/jquery-ui-1.css">
+
+	<script src="js/jquery-1.js"></script>
+	<script src="js/jquery-ui-1.js"></script>
+
+	<!-- Javascript for the actual visualization code -->
+	<script type="application/javascript" src="js/CustomEvents.js"> </script>
+	<script type="application/javascript" src="js/UndoFunctions.js"> </script>
+	<script type="application/javascript" src="js/AnimatedObject.js"> </script>
+	<script type="application/javascript" src="js/AnimatedLabel.js"> </script>
+	<script type="application/javascript" src="js/AnimatedCircle.js"> </script>
+	<script type="application/javascript" src="js/AnimatedRectangle.js"> </script>
+	<script type="application/javascript" src="js/AnimatedLinkedList.js"> </script>
+	<script type="application/javascript" src="js/HighlightCircle.js"> </script>
+	<script type="application/javascript" src="js/Line.js"> </script>
+	<script type="application/javascript" src="js/ObjectManager.js"> </script>
+	<script type="application/javascript" src="js/AnimationMain.js"> </script>
+	<script type="application/javascript" src="js/Algorithm.js"> </script>
+	<script type="application/javascript" src="js/RadixTree.js"> </script>
+
+</head>
+
+<body onload="init();" class="VisualizationMainPage">
+
+	<div id="container">
+
+		<div id="header">
+			<h1>Radix Tree</h1>
+		</div>
+
+		<div id="mainContent">
+
+			<div id="algoControlSection">
+				<!-- Table for buttons to control specific animation (insert/find/etc) -->
+				<!-- (filled in by javascript code specific to the animtion) -->
+				<table id="AlgorithmSpecificControls"> </table>
+			</div>
+
+			<!-- Drawing canvas where all animation is done.  Note:  can be resized in code -->
+
+			<canvas id="canvas" width="1000" height="500"></canvas>
+			<div id="generalAnimationControlSection">
+				<!-- Table for buttons to control general animation (play/pause/undo/etc) ->
+					<!-- (filled in by javascript code, specifically AnimationMain.js)  -->
+
+				<table id="GeneralAnimationControls"> </table>
+			</div>
+
+		</div> <!-- mainContent -->
+
+		<div id="footer">
+			<p><a href="https://www.cs.usfca.edu/~galles/visualization/Algorithms.html">Algorithm Visualizations</a></p>
+		</div>
+
+	</div><!-- container -->
+
+
+</body>
+
+</html>
